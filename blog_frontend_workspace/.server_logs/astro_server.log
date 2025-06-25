@@ -1,0 +1,244 @@
+
+> astro@0.0.1 dev
+> astro dev --host 0.0.0.0 --port 3000
+
+07:24:31 [types] Generated 1ms
+07:24:31 [content] Syncing content
+07:24:31 [content] Synced content
+07:24:31 [vite] Re-optimizing dependencies because vite config has changed
+
+ astro  v5.4.2 ready in 198 ms
+
+┃ Local    http://localhost:3000/
+┃ Network  http://172.17.0.2:3000/
+
+07:24:31 watching for file changes...
+
+ update  ▶ New version of Astro available: 5.10.1
+  Run npx @astrojs/upgrade to update
+
+07:24:36 Configuration file updated. Restarting...
+07:24:36 [vite] Re-optimizing dependencies because vite config has changed
+07:24:36 [content] Syncing content
+07:24:36 [content] Synced content
+07:24:36 [types] Generated 78ms
+07:24:36 [vite] Re-optimizing dependencies because vite config has changed
+07:24:43 Configuration file updated. Restarting...
+07:24:43 [vite] Re-optimizing dependencies because vite config has changed
+07:24:43 [content] Syncing content
+07:24:43 [content] Synced content
+07:24:43 [types] Generated 75ms
+07:24:43 [vite] Re-optimizing dependencies because vite config has changed
+07:24:49 Configuration file updated. Restarting...
+07:24:49 [vite] Re-optimizing dependencies because vite config has changed
+07:24:49 [content] Syncing content
+07:24:49 [content] Synced content
+07:24:49 [types] Generated 68ms
+07:24:49 [vite] Re-optimizing dependencies because vite config has changed
+07:24:55 Configuration file updated. Restarting...
+07:24:55 [vite] Re-optimizing dependencies because vite config has changed
+07:24:55 [content] Syncing content
+07:24:55 [content] Synced content
+07:24:55 [types] Generated 72ms
+07:24:55 [vite] Re-optimizing dependencies because vite config has changed
+07:25:01 Configuration file updated. Restarting...
+07:25:01 [vite] Re-optimizing dependencies because vite config has changed
+07:25:01 [content] Syncing content
+07:25:01 [content] Synced content
+07:25:01 [types] Generated 73ms
+07:25:01 [vite] Re-optimizing dependencies because vite config has changed
+07:25:07 Configuration file updated. Restarting...
+07:25:07 [vite] Re-optimizing dependencies because vite config has changed
+07:25:07 [content] Syncing content
+07:25:07 [content] Synced content
+07:25:07 [types] Generated 78ms
+07:25:07 [vite] Re-optimizing dependencies because vite config has changed
+07:25:13 Configuration file updated. Restarting...
+07:25:13 [vite] Re-optimizing dependencies because vite config has changed
+07:25:14 [content] Syncing content
+07:25:14 [content] Synced content
+07:25:14 [types] Generated 60ms
+07:25:14 [vite] Re-optimizing dependencies because vite config has changed
+07:25:20 Configuration file updated. Restarting...
+07:25:20 [vite] Re-optimizing dependencies because vite config has changed
+07:25:20 [content] Syncing content
+07:25:20 [content] Synced content
+07:25:20 [types] Generated 81ms
+07:25:20 [vite] Re-optimizing dependencies because vite config has changed
+07:25:26 Configuration file updated. Restarting...
+07:25:26 [vite] Re-optimizing dependencies because vite config has changed
+07:25:26 [content] Syncing content
+07:25:26 [content] Synced content
+07:25:26 [types] Generated 61ms
+07:25:26 [vite] Re-optimizing dependencies because vite config has changed
+07:25:32 Configuration file updated. Restarting...
+07:25:32 [vite] Re-optimizing dependencies because vite config has changed
+07:25:32 [content] Syncing content
+07:25:32 [content] Synced content
+07:25:32 [types] Generated 68ms
+07:25:32 [vite] Re-optimizing dependencies because vite config has changed
+07:25:38 Configuration file updated. Restarting...
+07:25:38 [vite] Re-optimizing dependencies because vite config has changed
+07:25:38 [content] Syncing content
+07:25:38 [content] Synced content
+07:25:38 [types] Generated 59ms
+07:25:38 [vite] Re-optimizing dependencies because vite config has changed
+07:25:38 Configuration file updated. Restarting...
+07:25:38 [content] Syncing content
+07:25:38 [content] Synced content
+07:25:38 [types] Generated 68ms
+07:25:38 [vite] Re-optimizing dependencies because vite config has changed
+07:25:44 Configuration file updated. Restarting...
+07:25:44 [vite] Re-optimizing dependencies because vite config has changed
+07:25:45 [content] Syncing content
+07:25:45 [content] Synced content
+07:25:45 [types] Generated 66ms
+07:25:45 [vite] Re-optimizing dependencies because vite config has changed
+07:25:51 Configuration file updated. Restarting...
+07:25:51 [vite] Re-optimizing dependencies because vite config has changed
+07:25:51 [content] Syncing content
+07:25:51 [content] Synced content
+07:25:51 [types] Generated 58ms
+07:25:51 [vite] Re-optimizing dependencies because vite config has changed
+07:25:51 Configuration file updated. Restarting...
+07:25:51 [content] Syncing content
+07:25:51 [content] Synced content
+07:25:51 [types] Generated 61ms
+07:25:51 [vite] Re-optimizing dependencies because vite config has changed
+07:25:57 Configuration file updated. Restarting...
+07:25:57 [vite] Re-optimizing dependencies because vite config has changed
+07:25:57 [content] Syncing content
+07:25:57 [content] Synced content
+07:25:57 [types] Generated 75ms
+07:25:57 [vite] Re-optimizing dependencies because vite config has changed
+07:26:03 Configuration file updated. Restarting...
+07:26:03 [vite] Re-optimizing dependencies because vite config has changed
+07:26:03 [content] Syncing content
+07:26:03 [content] Synced content
+07:26:03 [types] Generated 57ms
+07:26:03 [vite] Re-optimizing dependencies because vite config has changed
+07:26:03 Configuration file updated. Restarting...
+07:26:03 [content] Syncing content
+07:26:03 [content] Synced content
+07:26:03 [types] Generated 66ms
+07:26:03 [vite] Re-optimizing dependencies because vite config has changed
+07:26:09 Configuration file updated. Restarting...
+07:26:09 [vite] Re-optimizing dependencies because vite config has changed
+07:26:09 [content] Syncing content
+07:26:09 [content] Synced content
+07:26:09 [types] Generated 62ms
+07:26:09 [vite] Re-optimizing dependencies because vite config has changed
+07:26:15 Configuration file updated. Restarting...
+07:26:15 [vite] Re-optimizing dependencies because vite config has changed
+07:26:15 [content] Syncing content
+07:26:15 [content] Synced content
+07:26:15 [types] Generated 77ms
+07:26:15 [vite] Re-optimizing dependencies because vite config has changed
+07:26:22 Configuration file updated. Restarting...
+07:26:22 [vite] Re-optimizing dependencies because vite config has changed
+07:26:22 [content] Syncing content
+07:26:22 [content] Synced content
+07:26:22 [types] Generated 70ms
+07:26:22 [vite] Re-optimizing dependencies because vite config has changed
+07:26:28 Configuration file updated. Restarting...
+07:26:28 [vite] Re-optimizing dependencies because vite config has changed
+07:26:28 [content] Syncing content
+07:26:28 [content] Synced content
+07:26:28 [types] Generated 57ms
+07:26:28 [vite] Re-optimizing dependencies because vite config has changed
+07:26:28 Configuration file updated. Restarting...
+07:26:28 [content] Syncing content
+07:26:28 [content] Synced content
+07:26:28 [types] Generated 54ms
+07:26:28 [vite] Re-optimizing dependencies because vite config has changed
+07:26:34 Configuration file updated. Restarting...
+07:26:34 [vite] Re-optimizing dependencies because vite config has changed
+07:26:34 [content] Syncing content
+07:26:34 [content] Synced content
+07:26:34 [types] Generated 57ms
+07:26:34 [vite] Re-optimizing dependencies because vite config has changed
+07:26:34 Configuration file updated. Restarting...
+07:26:34 [content] Syncing content
+07:26:34 [content] Synced content
+07:26:34 [types] Generated 65ms
+07:26:34 [vite] Re-optimizing dependencies because vite config has changed
+07:26:40 Configuration file updated. Restarting...
+07:26:40 [vite] Re-optimizing dependencies because vite config has changed
+07:26:41 [content] Syncing content
+07:26:41 [content] Synced content
+07:26:41 [types] Generated 58ms
+07:26:41 [vite] Re-optimizing dependencies because vite config has changed
+07:26:41 Configuration file updated. Restarting...
+07:26:41 [content] Syncing content
+07:26:41 [content] Synced content
+07:26:41 [types] Generated 51ms
+07:26:41 [vite] Re-optimizing dependencies because vite config has changed
+07:26:47 Configuration file updated. Restarting...
+07:26:47 [vite] Re-optimizing dependencies because vite config has changed
+07:26:47 [content] Syncing content
+07:26:47 [content] Synced content
+07:26:47 [types] Generated 52ms
+07:26:47 [vite] Re-optimizing dependencies because vite config has changed
+07:26:47 Configuration file updated. Restarting...
+07:26:47 [vite] Re-optimizing dependencies because vite config has changed
+07:26:47 [content] Syncing content
+07:26:47 [content] Synced content
+07:26:47 [types] Generated 59ms
+07:26:47 [vite] Re-optimizing dependencies because vite config has changed
+07:26:53 Configuration file updated. Restarting...
+07:26:53 [vite] Re-optimizing dependencies because vite config has changed
+07:26:53 [content] Syncing content
+07:26:53 [content] Synced content
+07:26:53 [types] Generated 57ms
+07:26:53 [vite] Re-optimizing dependencies because vite config has changed
+07:26:59 Configuration file updated. Restarting...
+07:26:59 [vite] Re-optimizing dependencies because vite config has changed
+07:26:59 [content] Syncing content
+07:26:59 [content] Synced content
+07:26:59 [types] Generated 60ms
+07:26:59 [vite] Re-optimizing dependencies because vite config has changed
+07:26:59 Configuration file updated. Restarting...
+07:26:59 [content] Syncing content
+07:26:59 [content] Synced content
+07:26:59 [types] Generated 63ms
+07:26:59 [vite] Re-optimizing dependencies because vite config has changed
+07:27:05 Configuration file updated. Restarting...
+07:27:05 [vite] Re-optimizing dependencies because vite config has changed
+07:27:05 [content] Syncing content
+07:27:05 [content] Synced content
+07:27:05 [types] Generated 58ms
+07:27:05 [vite] Re-optimizing dependencies because vite config has changed
+07:27:05 Configuration file updated. Restarting...
+✘ [ERROR] The build was canceled
+
+07:27:06 [content] Syncing content
+07:27:06 [content] Synced content
+07:27:06 [types] Generated 69ms
+07:27:06 [vite] Re-optimizing dependencies because vite config has changed
+07:27:07 [WARN] [vite] The glob option "as" has been deprecated in favour of "query". Please update `as: 'raw'` to `query: '?raw', import: 'default'`.
+07:27:08 [200] / 27ms
+07:30:03 [200] / 7ms
+07:33:15 [200] / 11ms
+07:34:12 [200] / 5ms
+07:34:13 [200] / 5ms
+07:34:13 [404] /styles/global.css 2ms
+07:34:14 [404] /styles/global.css 2ms
+07:34:22 [200] / 5ms
+07:34:22 [200] / 4ms
+07:34:22 [404] /styles/global.css 1ms
+07:34:22 [404] /styles/global.css 1ms
+07:35:55 [200] / 7ms
+07:35:55 [200] / 4ms
+07:35:55 [404] /styles/global.css 1ms
+07:35:56 [404] /styles/global.css 1ms
+07:35:58 [200] / 6ms
+07:35:59 [404] /styles/global.css 1ms
+07:36:05 [200] / 7ms
+07:36:06 [200] / 4ms
+07:36:06 [404] /styles/global.css 1ms
+07:36:07 [404] /styles/global.css 1ms
+07:36:10 [WARN] [vite] The glob option "as" has been deprecated in favour of "query". Please update `as: 'raw'` to `query: '?raw', import: 'default'`.
+07:36:10 [200] / 4ms
+07:36:10 [200] / 4ms
+07:36:10 [404] /styles/global.css 1ms
+07:36:10 [404] /styles/global.css 1ms

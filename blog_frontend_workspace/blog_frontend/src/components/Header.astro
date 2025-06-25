@@ -5,16 +5,22 @@
  */
 ---
 
-<header class="bg-primary text-white px-4 py-5 shadow">
-  <div class="container mx-auto flex justify-between items-center">
-    <a href="/" class="font-bold text-2xl tracking-tight hover:text-accent transition">
+<header class="bg-primary text-white py-5 shadow">
+  <div class="container flex justify-between items-center">
+    <a href="/" class="font-bold text-2xl tracking-tight hover:text-accent transition focus:text-accent focus:outline-none">
       My Astro Blog
     </a>
     <nav>
       <ul class="flex gap-4 text-base font-medium">
-        <li><a href="/" class="hover:text-accent transition">Home</a></li>
-        <li><a href="/about" class="hover:text-accent transition">About</a></li>
-        <li><a href="/contact" class="hover:text-accent transition">Contact</a></li>
+        <li>
+          <a href="/" class="hover:text-accent transition focus:text-accent focus:underline focus:outline-none">Home</a>
+        </li>
+        <li>
+          <a href="/about" class="hover:text-accent transition focus:text-accent focus:underline focus:outline-none">About</a>
+        </li>
+        <li>
+          <a href="/contact" class="hover:text-accent transition focus:text-accent focus:underline focus:outline-none">Contact</a>
+        </li>
       </ul>
     </nav>
   </div>
