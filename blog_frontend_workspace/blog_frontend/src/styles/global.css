@@ -1,0 +1,81 @@
+/* Minimal global CSS for Astro static blog */
+/* Color variables */
+:root {
+  --primary: #1a202c;
+  --secondary: #4a5568;
+  --accent: #2563eb;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
+  color: var(--primary);
+  margin: 0;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #1e40af;
+}
+.bg-primary { background: var(--primary); }
+.bg-secondary { background: var(--secondary); }
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-accent { color: var(--accent);}
+.text-gray-200 { color: #e5e7eb; }
+.text-gray-400 { color: #9ca3af; }
+.shadow, .shadow-sm { box-shadow: 0 1px 3px 0 #0001; }
+.shadow-md { box-shadow: 0 2px 8px 0 #0002; }
+.rounded-lg { border-radius: 0.5rem; }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.justify-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.gap-4 { gap: 1rem; }
+.mt-10 { margin-top: 2.5rem; }
+.py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.p-6 { padding: 1.5rem; }
+.font-bold { font-weight: bold; }
+.font-semibold { font-weight: 600; }
+.font-medium { font-weight: 500; }
+.text-lg { font-size: 1.125rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-base { font-size: 1rem; }
+.text-xs  { font-size: 0.75rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-auto { margin-bottom: auto; }
+.mt-4 { margin-top: 1rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.overflow-hidden { overflow: hidden; }
+.hover\:shadow-md:hover { box-shadow: 0 4px 20px 0 #0002; }
+.transition { transition: all 0.2s; }
+.line-clamp-2 {
+  display: -webkit-box; -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-3 {
+  display: -webkit-box; -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.grid {
+  display: grid;
+  grid-gap: 2rem;
+}
+@media (min-width: 600px) {
+  .grid-cols-2 { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (min-width: 900px) {
+  .grid-cols-3 { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}

@@ -1,0 +1,61 @@
+---
+import BlogCard from "../components/BlogCard.astro";
+import BaseLayout from "../components/BaseLayout.astro";
+
+/**
+ * Homepage listing all blog posts as previews (cards), using Astro static glob import.
+ */
+
+// Use Astro's glob import for Markdown files in /content
+const postFiles = import.meta.glob('../content/*.md', { as: 'raw' });
+
+let posts = [];
+for (const path in postFiles) {
+  const raw = await postFiles[path]();
+  const slug = path.match(/([^/]+)\.md$/)[1];
+  const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+  let frontmatter = {
+    title: slug,
+    description: "",
+    pubDate: ""
+  };
+  if (match) {
+    for (const line of match[1].split("\n")) {
+      const [key, ...rest] = line.split(":");
+      if (key && rest.length) {
+        frontmatter[key.trim()] = rest.join(":").trim().replace(/^"|"$/g, "");
+      }
+    }
+  }
+  posts.push({
+    ...frontmatter,
+    href: `/blog/${slug}`
+  });
+}
+// Sort newest first by date
+posts = posts.sort((a, b) => (b.pubDate || "").localeCompare(a.pubDate || ""));
+
+---
+
+<BaseLayout>
+  <section class="container py-8">
+    <h1 class="text-2xl font-bold text-primary mb-8">
+      Astro Blog
+      <span class="text-accent text-base ml-2">Read our latest posts:</span>
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {posts.length > 0 ? (
+        posts.map(post => (
+          <BlogCard
+            title={post.title}
+            description={post.description}
+            pubDate={post.pubDate}
+            href={post.href}
+          />
+        ))
+      ) : (
+        <p>No blog posts found.</p>
+      )}
+    </div>
+  </section>
+</BaseLayout>

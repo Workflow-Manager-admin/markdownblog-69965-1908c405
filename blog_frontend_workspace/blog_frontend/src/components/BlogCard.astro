@@ -1,0 +1,20 @@
+---
+/**
+ * BlogCard component for previewing blog posts on the homepage.
+ * Props:
+ *  - title: string
+ *  - description: string
+ *  - pubDate: string (preferably ISO)
+ *  - href: string (URL of the blog post)
+ */
+const { title, description, pubDate, href } = Astro.props;
+---
+
+<article class="border rounded-lg bg-white shadow-sm hover:shadow-md transition overflow-hidden flex flex-col h-full">
+  <a href={href} class="p-6 grow flex flex-col">
+    <h2 class="text-lg font-bold text-primary mb-1 line-clamp-2">{title}</h2>
+    <time datetime={pubDate} class="text-xs text-gray-400 mb-2">{pubDate}</time>
+    <p class="text-base text-secondary line-clamp-3 mb-auto">{description}</p>
+    <span class="mt-4 text-accent font-semibold inline-block hover:underline">Read more →</span>
+  </a>
+</article>

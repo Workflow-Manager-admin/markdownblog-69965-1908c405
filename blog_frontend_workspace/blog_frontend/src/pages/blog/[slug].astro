@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+import { marked } from "marked";
+
+/**
+ * PUBLIC_INTERFACE
+ * getStaticPaths populates routes for dynamic blog slugs based on all Markdown files in src/content.
+ */
+export async function getStaticPaths() {
+  const contentGlob = import.meta.glob('../../content/*.md', { as: 'raw' });
+  const paths = [];
+
+  for (const path in contentGlob) {
+    const raw = await contentGlob[path]();
+    const slug = path.match(/([^/]+)\.md$/)[1];
+
+    const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+    let frontmatter = {
+      title: slug,
+      description: "",
+      pubDate: ""
+    };
+    let content = "";
+    if (match) {
+      for (const line of match[1].split("\n")) {
+        const [key, ...rest] = line.split(":");
+        if (key && rest.length) {
+          frontmatter[key.trim()] = rest.join(":").trim().replace(/^"|"$/g, "");
+        }
+      }
+      content = match[2];
+    }
+    paths.push({
+      params: { slug },
+      props: {
+        frontmatter,
+        rawContent: content
+      }
+    });
+  }
+
+  return paths;
+}
+
+const { frontmatter, rawContent } = Astro.props;
+const html = marked.parse(rawContent);
+
+---
+
+<BaseLayout title={frontmatter.title + " | My Astro Blog"}>
+  <section class="container max-w-2xl mx-auto bg-white rounded-lg shadow p-8 mt-10">
+    <h1 class="text-2xl font-bold mb-2">{frontmatter.title}</h1>
+    <p class="text-gray-400 mb-8">{frontmatter.pubDate}</p>
+    <div class="prose" set:html={html}></div>
+  </section>
+</BaseLayout>

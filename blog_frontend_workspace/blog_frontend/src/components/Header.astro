@@ -1,0 +1,21 @@
+---
+/**
+ * Header component for minimal static blog.
+ * Shows site title and navigation links.
+ */
+---
+
+<header class="bg-primary text-white px-4 py-5 shadow">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="/" class="font-bold text-2xl tracking-tight hover:text-accent transition">
+      My Astro Blog
+    </a>
+    <nav>
+      <ul class="flex gap-4 text-base font-medium">
+        <li><a href="/" class="hover:text-accent transition">Home</a></li>
+        <li><a href="/about" class="hover:text-accent transition">About</a></li>
+        <li><a href="/contact" class="hover:text-accent transition">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
