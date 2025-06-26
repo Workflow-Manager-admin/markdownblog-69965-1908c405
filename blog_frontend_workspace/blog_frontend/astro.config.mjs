@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/markdown-remark';
+import markdown from '@astrojs/markdown';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [mdx()],
+  integrations: [markdown()],
   server: {
     host: '0.0.0.0',
     allowedHosts: ['.kavia.ai'],
