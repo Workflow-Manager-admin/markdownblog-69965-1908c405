@@ -2,23 +2,14 @@
 > astro@0.0.1 dev
 > astro dev --port 3000 --host 0.0.0.0
 
-07:04:15 [types] Generated 1ms
-07:04:15 [content] Syncing content
-07:04:15 [content] Synced content
-07:04:15 [vite] Re-optimizing dependencies because lockfile has changed
+07:07:07 [types] Generated 1ms
+07:07:07 [content] Syncing content
+07:07:07 [content] Synced content
+07:07:07 [vite] Re-optimizing dependencies because vite config has changed
 
- astro  v5.4.2 ready in 167 ms
+ astro  v5.4.2 ready in 148 ms
 
 ┃ Local    http://localhost:3000/
 ┃ Network  http://172.17.0.2:3000/
 
-07:04:15 watching for file changes...
-Astro.glob is deprecated and will be removed in a future major version of Astro.
-Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
-07:05:58 [200] / 338ms
-Astro.glob is deprecated and will be removed in a future major version of Astro.
-Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
-07:06:05 [200] / 11ms
-Astro.glob is deprecated and will be removed in a future major version of Astro.
-Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
-07:06:06 [200] / 7ms
+07:07:07 watching for file changes...

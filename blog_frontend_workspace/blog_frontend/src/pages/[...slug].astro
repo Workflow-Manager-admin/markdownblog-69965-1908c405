@@ -1,12 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+// PUBLIC_INTERFACE
+export async function getStaticPaths() {
+  // Use import.meta.glob to generate all posts
+  const allPostFiles = import.meta.glob('../posts/*.md');
+  const paths = [];
+
+  // Each key in allPostFiles is the relative path (e.g. ../posts/hello-astro.md).
+  for (const file in allPostFiles) {
+    // Remove ../posts/ and .md to get filename
+    const filename = file.split('/').pop().replace(/\.md$/, '');
+    // Support multi-segment slugs (if you want subfolders, e.g. posts/year/slug.md)
+    const slugArr = filename.split('/');
+    paths.push({ params: { slug: slugArr } });
+  }
+  return paths;
+}
+
 const { slug } = Astro.params;
-// Import all markdown posts
-const postImport = await Astro.glob('../posts/*.md');
+// Use import.meta.glob to load all posts
+const allPostFiles = import.meta.glob('../posts/*.md', { eager: true });
+// Match the post based on slug. (slug can be array or string)
 const urlSlug = Array.isArray(slug) ? slug.join('/') : slug;
-// Posts in Astro get .url of the form /posts/slug/
-const post = postImport.find(p => p.url.endsWith(`/${urlSlug}/`) || p.url.endsWith(`/${urlSlug}`));
+
+// Each import result shape: { frontmatter, url, Content }
+let post = null;
+for (const [path, mod] of Object.entries(allPostFiles)) {
+  // Remove "../posts/" and ".md" from the filename
+  const filename = path.split('/').pop().replace(/\.md$/, '');
+  if (filename === urlSlug) {
+    post = mod;
+    break;
+  }
+}
 
 // If not found, error
 if (!post) {
