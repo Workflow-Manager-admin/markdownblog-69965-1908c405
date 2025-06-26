@@ -1,20 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-// PUBLIC_INTERFACE
+/**
+ * PUBLIC_INTERFACE
+ * Astro dynamic route: enumerate all valid slugs for existing markdown posts.
+ * Exports getStaticPaths() for Astro v3+, gathers posts with import.meta.glob.
+ */
 export async function getStaticPaths() {
-  // Use import.meta.glob to generate all posts
+  // Enumerate all markdown files in posts directory at build time
   const allPostFiles = import.meta.glob('../posts/*.md');
   const paths = [];
 
-  // Each key in allPostFiles is the relative path (e.g. ../posts/hello-astro.md).
+  // Each key: '../posts/filename.md'
   for (const file in allPostFiles) {
-    // Remove ../posts/ and .md to get filename
-    const filename = file.split('/').pop().replace(/\.md$/, '');
-    // Support multi-segment slugs (if you want subfolders, e.g. posts/year/slug.md)
+    // Get slug by stripping directory and extension
+    const filename = file.replace(/^.*\/posts\//, '').replace(/\.md$/, '');
+    // Split at '/' in case user adds subfolders in the future; currently: just filename
     const slugArr = filename.split('/');
     paths.push({ params: { slug: slugArr } });
   }
+  // Astro v3+ requires { params: { slug: string[] } }[]
   return paths;
 }
 
