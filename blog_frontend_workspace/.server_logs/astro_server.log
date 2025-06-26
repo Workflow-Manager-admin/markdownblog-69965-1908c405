@@ -7,7 +7,7 @@
   Run "astro telemetry disable" to opt-out.
   https://astro.build/telemetry
 
-6:54:07 AM [vite] (ssr) Error when evaluating SSR module /home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/astro.config.mjs: [vite] The requested module '@astrojs/markdown-remark' does not provide an export named 'default'
+1:25:27 PM [vite] (ssr) Error when evaluating SSR module /home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/astro.config.mjs: [vite] The requested module '@astrojs/markdown-remark' does not provide an export named 'default'
       at analyzeImportedModDifference (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:530:39)
       at SSRCompatModuleRunner.processImport (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1142:56)
       at SSRCompatModuleRunner.cachedRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1180:62)

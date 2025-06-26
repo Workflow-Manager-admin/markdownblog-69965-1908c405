@@ -1,12 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Markdown } from 'astro/components';
+
+export async function getStaticPaths() {
+  const postImports = import.meta.glob('../posts/*.md');
+  const iterable = Object.entries(postImports);
+
+  const paths = await Promise.all(
+    iterable.map(async ([path, resolver]) => {
+      const post = await resolver();
+      // Remove the file extension and leading directories for slug
+      // '../posts/hello-astro.md'  →  'hello-astro'
+      const slug = path
+        .split('/')
+        .pop()
+        .replace(/\.md$/, '');
+
+      return { params: { slug } };
+    })
+  );
+  return paths;
+}
 
 const { slug } = Astro.params;
-// Find the matching post markdown file
-const postImport = await Astro.glob('../posts/*.md');
-const urlSlug = Array.isArray(slug) ? slug.join('/') : slug;
-const post = postImport.find(p => p.url.endsWith(`/${urlSlug}/`));
+
+// Load all posts and find matching by slug
+const postImports = import.meta.glob('../posts/*.md');
+let matchingPost;
+for (const [path, resolver] of Object.entries(postImports)) {
+  const fileSlug = path.split('/').pop().replace(/\.md$/, '');
+  if (fileSlug === slug || (Array.isArray(slug) && slug.join('/') === fileSlug)) {
+    matchingPost = await resolver();
+    break;
+  }
+}
+const post = matchingPost;
 
 if (!post) {
   throw new Error('Blog post not found');
@@ -21,7 +48,7 @@ const { title, pubDate, description } = post.frontmatter;
     <time class="post-date" datetime={pubDate}>{new Date(pubDate).toLocaleDateString()}</time>
     {description && <p class="post-desc">{description}</p>}
     <div class="post-content">
-      <Markdown content={post.compiledContent()} />
+      {post && <post.Content />}
     </div>
   </article>
 </Layout>
