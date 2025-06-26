@@ -1,17 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Markdown } from 'astro/components';
 
 const { slug } = Astro.params;
-// Find the matching post markdown file
+// Import all markdown posts
 const postImport = await Astro.glob('../posts/*.md');
 const urlSlug = Array.isArray(slug) ? slug.join('/') : slug;
-const post = postImport.find(p => p.url.endsWith(`/${urlSlug}/`));
+// Posts in Astro get .url of the form /posts/slug/
+const post = postImport.find(p => p.url.endsWith(`/${urlSlug}/`) || p.url.endsWith(`/${urlSlug}`));
 
+// If not found, error
 if (!post) {
   throw new Error('Blog post not found');
 }
 const { title, pubDate, description } = post.frontmatter;
+// Astro v3 native markdown rendering: post.Content is a component that renders the markdown
 ---
 
 <Layout>
@@ -21,7 +23,7 @@ const { title, pubDate, description } = post.frontmatter;
     <time class="post-date" datetime={pubDate}>{new Date(pubDate).toLocaleDateString()}</time>
     {description && <p class="post-desc">{description}</p>}
     <div class="post-content">
-      <Markdown content={post.compiledContent()} />
+      <post.Content />
     </div>
   </article>
 </Layout>

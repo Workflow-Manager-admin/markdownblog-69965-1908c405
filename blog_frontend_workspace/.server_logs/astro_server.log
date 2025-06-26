@@ -2,25 +2,23 @@
 > astro@0.0.1 dev
 > astro dev --port 3000 --host 0.0.0.0
 
-7:00:36 AM [vite] (ssr) Error when evaluating SSR module /home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/astro.config.mjs: [vite] The requested module '@astrojs/markdown-remark' does not provide an export named 'default'
-      at analyzeImportedModDifference (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:530:39)
-      at SSRCompatModuleRunner.processImport (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1142:56)
-      at SSRCompatModuleRunner.cachedRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1180:62)
-      at async eval (/home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/astro.config.mjs:2:1)
-      at async ESModulesEvaluator.runInlinedModule (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1062:5)
-      at async SSRCompatModuleRunner.directRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1284:61)
-      at async SSRCompatModuleRunner.directRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
-      at async SSRCompatModuleRunner.cachedRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1180:76)
-      at async SSRCompatModuleRunner.import (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1117:12)
-      at async instantiateModule (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
-[astro] Unable to load your Astro config
+07:04:15 [types] Generated 1ms
+07:04:15 [content] Syncing content
+07:04:15 [content] Synced content
+07:04:15 [vite] Re-optimizing dependencies because lockfile has changed
 
-[vite] The requested module '@astrojs/markdown-remark' does not provide an export named 'default'
-  Location:
-    /home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:530:39
-  Stack trace:
-    at analyzeImportedModDifference (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:530:39)
-    at SSRCompatModuleRunner.cachedRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1180:62)
-    at async ESModulesEvaluator.runInlinedModule (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1062:5)
-    at async SSRCompatModuleRunner.directRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
-    at async SSRCompatModuleRunner.import (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1117:12)
+ astro  v5.4.2 ready in 167 ms
+
+┃ Local    http://localhost:3000/
+┃ Network  http://172.17.0.2:3000/
+
+07:04:15 watching for file changes...
+Astro.glob is deprecated and will be removed in a future major version of Astro.
+Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
+07:05:58 [200] / 338ms
+Astro.glob is deprecated and will be removed in a future major version of Astro.
+Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
+07:06:05 [200] / 11ms
+Astro.glob is deprecated and will be removed in a future major version of Astro.
+Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
+07:06:06 [200] / 7ms
