@@ -2,30 +2,57 @@
 > astro@0.0.1 dev
 > astro dev --port 3000 --host 0.0.0.0
 
-▶ Astro collects anonymous usage data.
-  This information helps us improve Astro.
-  Run "astro telemetry disable" to opt-out.
-  https://astro.build/telemetry
+13:27:40 [types] Generated 1ms
+13:27:40 [content] Syncing content
+13:27:40 [content] Synced content
+13:27:40 [vite] Re-optimizing dependencies because vite config has changed
 
-1:25:27 PM [vite] (ssr) Error when evaluating SSR module /home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/astro.config.mjs: [vite] The requested module '@astrojs/markdown-remark' does not provide an export named 'default'
-      at analyzeImportedModDifference (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:530:39)
-      at SSRCompatModuleRunner.processImport (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1142:56)
-      at SSRCompatModuleRunner.cachedRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1180:62)
-      at async eval (/home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/astro.config.mjs:2:1)
-      at async ESModulesEvaluator.runInlinedModule (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1062:5)
-      at async SSRCompatModuleRunner.directRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1284:61)
-      at async SSRCompatModuleRunner.directRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
-      at async SSRCompatModuleRunner.cachedRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1180:76)
-      at async SSRCompatModuleRunner.import (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1117:12)
-      at async instantiateModule (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
-[astro] Unable to load your Astro config
+ astro  v5.4.2 ready in 187 ms
 
-[vite] The requested module '@astrojs/markdown-remark' does not provide an export named 'default'
-  Location:
-    /home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:530:39
-  Stack trace:
-    at analyzeImportedModDifference (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:530:39)
-    at SSRCompatModuleRunner.cachedRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1180:62)
-    at async ESModulesEvaluator.runInlinedModule (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1062:5)
-    at async SSRCompatModuleRunner.directRequest (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
-    at async SSRCompatModuleRunner.import (file:///home/kavia/workspace/code-generation/markdownblog-69965-1908c405/blog_frontend_workspace/blog_frontend/node_modules/vite/dist/node/module-runner.js:1117:12)
+┃ Local    http://localhost:3000/
+┃ Network  http://172.17.0.2:3000/
+
+13:27:40 watching for file changes...
+
+ update  ▶ New version of Astro available: 5.10.1
+  Run npx @astrojs/upgrade to update
+
+13:27:46 Configuration file updated. Restarting...
+13:27:46 [vite] Re-optimizing dependencies because vite config has changed
+13:27:46 [content] Syncing content
+13:27:46 [content] Synced content
+13:27:46 [types] Generated 82ms
+13:27:46 [vite] Re-optimizing dependencies because vite config has changed
+13:27:52 Configuration file updated. Restarting...
+13:27:52 [vite] Re-optimizing dependencies because vite config has changed
+13:27:52 [content] Syncing content
+13:27:52 [content] Synced content
+13:27:52 [types] Generated 72ms
+13:27:52 [vite] Re-optimizing dependencies because vite config has changed
+13:27:58 Configuration file updated. Restarting...
+13:27:58 [vite] Re-optimizing dependencies because vite config has changed
+13:27:58 [content] Syncing content
+13:27:58 [content] Synced content
+13:27:58 [types] Generated 79ms
+13:27:58 [vite] Re-optimizing dependencies because vite config has changed
+13:28:04 Configuration file updated. Restarting...
+13:28:04 [vite] Re-optimizing dependencies because vite config has changed
+13:28:04 [content] Syncing content
+13:28:04 [content] Synced content
+13:28:04 [types] Generated 91ms
+13:28:04 [vite] Re-optimizing dependencies because vite config has changed
+13:28:10 Configuration file updated. Restarting...
+13:28:10 [vite] Re-optimizing dependencies because vite config has changed
+13:28:10 [content] Syncing content
+13:28:10 [content] Synced content
+13:28:10 [types] Generated 82ms
+13:28:10 [vite] Re-optimizing dependencies because vite config has changed
+Astro.glob is deprecated and will be removed in a future major version of Astro.
+Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
+13:28:17 [200] / 331ms
+13:30:44 Configuration file updated. Restarting...
+13:30:44 [vite] Re-optimizing dependencies because vite config has changed
+13:30:44 [content] Syncing content
+13:30:44 [content] Synced content
+13:30:44 [types] Generated 82ms
+13:30:44 [vite] Re-optimizing dependencies because vite config has changed

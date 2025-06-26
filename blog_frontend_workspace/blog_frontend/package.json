@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "astro": "5.4.2",
-    "@astrojs/markdown-remark": "^4.0.2"
+    "@astrojs/markdown-remark": "^4.0.2",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@eslint/js": "9.24.0",
