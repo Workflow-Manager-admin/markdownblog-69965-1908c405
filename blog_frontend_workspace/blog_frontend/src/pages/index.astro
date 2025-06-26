@@ -1,11 +1,55 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import BlogCard from '../components/BlogCard.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Import all markdown posts at build time
+const allPosts = await Astro.glob('../posts/*.md');
+// sort by most recent
+const posts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate));
 ---
 
 <Layout>
-	<Welcome />
+  <section class="homepage">
+    <h1 class="page-title">Welcome to Astro Minimal Blog</h1>
+    <p class="subtitle">A clean, responsive blog built with Astro and Markdown.</p>
+    <div class="posts-grid">
+      {posts.map(post =>
+        <BlogCard
+          title={post.frontmatter.title}
+          url={post.url}
+          pubDate={post.frontmatter.pubDate}
+          description={post.frontmatter.description}
+        />
+      )}
+    </div>
+  </section>
 </Layout>
+
+<style>
+  .homepage {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .page-title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 0.15em;
+    color: #1a202c;
+  }
+  .subtitle {
+    color: #4a5568;
+    margin-bottom: 2.2em;
+    font-size: 1.12rem;
+  }
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 1.4rem;
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: left;
+  }
+  @media (max-width: 800px) {
+    .posts-grid { gap: 1rem; }
+  }
+</style>

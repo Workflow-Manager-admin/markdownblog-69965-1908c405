@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <section class="page-section">
+    <h1>About</h1>
+    <p>
+      This is a minimal and responsive blog built with Astro.<br />It uses Markdown files for blog content and demonstrates clean, accessible, and modern web design.
+    </p>
+    <p>
+      Built as a demo project. Find source code on <a href="https://github.com/withastro/astro" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  .page-section {
+    max-width: 650px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    padding: 2.5rem 1.2rem 2rem 1.2rem;
+    text-align: center;
+  }
+  h1 { font-size: 2rem; font-weight: bold; margin-bottom: 0.6em;}
+  p { font-size: 1.13rem; color: #4a5568; margin: 0.85em 0;}
+  a { color: #2563eb; }
+</style>

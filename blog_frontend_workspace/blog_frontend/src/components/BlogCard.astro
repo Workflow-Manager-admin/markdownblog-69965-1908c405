@@ -1,0 +1,64 @@
+---
+/**
+ * BlogCard: Display preview card for a blog post.
+ *
+ * Props:
+ * - title: string
+ * - url: string
+ * - pubDate: string
+ * - description: string
+ */
+const { title, url, pubDate, description } = Astro.props;
+---
+
+<article class="blog-card">
+  <a href={url} class="blog-link">
+    <h2 class="blog-title">{title}</h2>
+    <time datetime={pubDate} class="blog-date">{new Date(pubDate).toLocaleDateString()}</time>
+    <p class="blog-desc">{description}</p>
+  </a>
+</article>
+
+<style>
+  .blog-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--card-bg);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transition: box-shadow 0.2s, border-color 0.15s;
+    margin: 0.5rem 0;
+  }
+  .blog-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 1.3rem 1.3rem 1rem 1.3rem;
+    border-radius: 12px;
+  }
+  .blog-card:hover, .blog-link:focus {
+    box-shadow: 0 4px 16px var(--shadow-hover-color);
+    border-color: #2563eb;
+    outline: none;
+  }
+  .blog-title {
+    font-size: 1.25rem;
+    color: #1a202c;
+    margin: 0 0 0.35rem 0;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  .blog-date {
+    display: block;
+    font-size: 0.92rem;
+    color: #4a5568;
+    margin-bottom: 0.6rem;
+  }
+  .blog-desc {
+    margin: 0;
+    color: #4a5568;
+    font-size: 1rem;
+  }
+  @media (max-width: 700px) {
+    .blog-link { padding: 1rem; }
+  }
+</style>
